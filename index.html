@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0,
+      maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta name="author" content="Di Ludovico Maximiiano" />
+    <meta
+      name="description"
+      content="Todo acerca de Maximiliano Di Ludovico, su vida, su trabajo, sus estudios, sus hobies
+conoce mas acerca de mi"
+    />
+    <meta
+      name="keywords"
+      content=" html5 , css3 , javascript , python , SQLITE , django , 
+      frontend , backend , desarrollo web , fullstack, herencia"
+    />
+    <meta name="Copyright" content="Di Ludovico Maximiiano" />
+    <meta name="language" content="es" />
+    <meta name="actualizado" content="29/11/2021" />
+    <meta name="revisit-after" content="1 month" />
+    <meta name="robots" content="index" />
+
+    <!--Archivos para borrar la cache del navegador-->
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Last-Modified" content="0" />
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+
+    <!-- add bootstrap css file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!--Fuente de google-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="images/favicon.png" rel="icon" type="image/x-icon" />
+    <title>Di Ludovico Maximiliano</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <script>
+      $(document).ready(function(){
+          $('.zoom').hover(function() {
+              $(this).addClass('transition');
+          }, function() {
+              $(this).removeClass('transition');
+          });
+      });
+      </script>
+    <style>
+      #sticky {
+        padding: 20px;
+        position: sticky;
+        top: 80px;
+        z-index:1;
+              }
+    </style>
+    <div id="sticky">
+      <iframe  align="right" style="border:1px solid #D4AF37; border-radius: 15px;" width="250" height="150" src="https://www.youtube.com/embed/PKATJiyz0iI?autoplay=1&mute=1&enablejsapi=1" title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+    </div>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <a class="navbar-brand" href="#">
+        <img
+        src="images/m.JPG" style="border-radius:50%; width:20%"
+        class="img-fluid"
+      /> 
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-4">
+          <li class="nav-item">
+            <a class="nav-link" data-value="about" href="#">ACERCA DE MI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-value="portfolio" href="#">PORTAFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-value="blog" href="#">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-value="team" href="#">INTERES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-value="contact" href="#">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- header -->
+    <header class="header">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="description">
+          <h1>
+            Bienvenidos a mi vida
+            <p>
+              Apasionado por la Ingeniería en informatica de carácter dinámico,
+              proactivo con capacidad analítica, autonomía y buena interacción
+              personal para crear, desarrollar e innovar soluciones digitales.
+              Aptitud para el liderazgo y trabajo en equipo. Interés por la
+              investigación e innovación tecnológica. Objetivo profesional
+              orientado al crecimiento de la empresa.
+            </p>
+            <input
+              type="button"
+              class="btn btn-outline-secondary btn-lg"
+              onClick="window.location='https://ar.linkedin.com/in/maximiliano-di-ludovico'"
+              value="Visitame"
+            />
+          </h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- about section -->
+    <div class="about" id="about">
+      <div class="container">
+        <h1 class="text-center">Acerca de mi</h1>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="images/Carnet.jpg" class="img-fluid zoom" />
+            <span class="text-justify">Ingeniero en Informática</span>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12 desc">
+            <h3>Maximiliano Di Ludovico</h3>
+            <p>
+              Soy un Profesional que investiga, desarrolla, diseña y crea
+              modelos fundados en sistemas informáticos en el área comercial,
+              administrativa y científica. Dispongo de una sólida formación
+              técnica y científica, ademas de estadística, ingeniería, lenguajes
+              de programación y sistemas de información para aplicarlos de forma
+              independiente, crítica e innovadora. Mi misión es implantar nuevas
+              formas de gestión tecnológicas basadas en la disponibilidad de
+              información en el momento adecuado, no sólo para la correcta toma
+              de decisiones, sino también para descubrir y explotar las
+              oportunidades y anticiparse al futuro
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio -->
+    <div class="portfolio" id="portfolio">
+      <h1 class="text-center">Portafolio</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+
+            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/bibliografia/1.JPG" alt="First slide">
+                  
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/bibliografia/2.JPG" alt="Second slide">
+                  
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/bibliografia/3.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/bibliografia/4.JPG" alt="Second slide">
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h4 class="card-title" style="text-align:center">Bibliografía</h4>
+                
+              </div>
+              <div class="col-md-12" style=" display: flex;
+              align-items: center;
+              justify-content: center;margin-bottom:20px;">
+              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#bibliografia" style="width:200px; border-radius:20px; background-color:#f8b500">
+                <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
+                </button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="bibliografia" tabindex="-1" role="dialog" aria-labelledby="bibliografiaLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="padding:20px; border: 2px solid orange; border-radius:20px">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bibliografiaLabel">Bibliografía</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer" style=" display: flex;
+      align-items: center;
+      justify-content: center;margin-bottom:20px;">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"  style="width:200px; border-radius:20px; background-color:#f8b500">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Fin del Modal-->
+
+              </div>
+            </div>         
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/ecommerce/10.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/ecommerce/12.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/ecommerce/13.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/ecommerce/14.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/ecommerce/2.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/ecommerce/5.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/ecommerce/6.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/ecommerce/8.png" alt="Second slide">
+                </div>
+                    <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/ecommerce/9.png" alt="Third slide">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card-body">
+              <h4 class="card-title" style="text-align:center">Analizador de mercado</h4>
+                
+              </div>
+              <div class="col-md-12" style=" display: flex;
+              align-items: center;
+              justify-content: center;margin-bottom:20px;">
+              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#ecommerce" style="width:200px; border-radius:20px; background-color:#f8b500">
+                <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
+                </button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="ecommerce" tabindex="-1" role="dialog" aria-labelledby="ecommerceLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="padding:20px; border: 2px solid orange; border-radius:20px">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ecommerceLabel">Analizador de mercado</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer" style=" display: flex;
+      align-items: center;
+      justify-content: center;margin-bottom:20px;">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"  style="width:200px; border-radius:20px; background-color:#f8b500">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Fin del Modal-->
+</div>
+</div>         
+</div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/pasteleria/Captura.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/pasteleria/3.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/pasteleria/4.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/pasteleria/5.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/pasteleria/2.JPG" alt="First slide">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title" style="text-align:center">Pasteleria</h4>
+                
+              </div>
+              <div class="col-md-12" style=" display: flex;
+              align-items: center;
+              justify-content: center;margin-bottom:20px;">
+              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#pasteleria" style="width:200px; border-radius:20px; background-color:#f8b500">
+                <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
+                </button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="pasteleria" tabindex="-1" role="dialog" aria-labelledby="pasteleriaLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="padding:20px; border: 2px solid orange; border-radius:20px">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pasteleriaLabel">Pasteleria</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer" style=" display: flex;
+      align-items: center;
+      justify-content: center;margin-bottom:20px;">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"  style="width:200px; border-radius:20px; background-color:#f8b500">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Fin del Modal-->
+</div>
+</div>         
+</div>
+
+<div class="espacio"></div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/reserrvas/Captura.JPG" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/reserrvas/10.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/reserrvas/11.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/reserrvas/2.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/reserrvas/3.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/reserrvas/4.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/reserrvas/5.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/reserrvas/6.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/reserrvas/7.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/reserrvas/9.JPG" alt="Second slide">
+                </div>
+              </div>
+            </div>
+               <div class="card-body">
+          <h4 class="card-title" style="text-align:center">Sistema de reservas para hoteleria</h4>
+            
+          </div>
+          <div class="col-md-12" style=" display: flex;
+          align-items: center;
+          justify-content: center;margin-bottom:20px;">
+          <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#reserva" style="width:200px; border-radius:20px; background-color:#f8b500">
+            <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
+            </button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="reserva" tabindex="-1" role="dialog" aria-labelledby="reservaLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content" style="padding:20px; border: 2px solid orange; border-radius:20px">
+  <div class="modal-header">
+    <h5 class="modal-title" id="reservaLabel">Sistema de reservas para hoteleria</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    ...
+  </div>
+  <div class="modal-footer" style=" display: flex;
+  align-items: center;
+  justify-content: center;margin-bottom:20px;">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal"  style="width:200px; border-radius:20px; background-color:#f8b500">Cerrar</button>
+  </div>
+</div>
+</div>
+</div>
+<!--Fin del Modal-->
+</div>
+</div>         
+</div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100 img-fluid zoom" src="images/portfolio/clinica/clinica.JPG" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 img-fluid zoom" src="images/portfolio/clinica/2.JPG" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 img-fluid zoom" src="images/portfolio/clinica/3.JPG" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 img-fluid zoom" src="images/portfolio/clinica/4.JPG" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 img-fluid zoom" src="images/portfolio/clinica/1.JPG" alt="Second slide">
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title" style="text-align:center">Centro de estudios médicos</h4>
+                  
+                </div>
+                <div class="col-md-12" style=" display: flex;
+                align-items: center;
+                justify-content: center;margin-bottom:20px;">
+                <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#estudioMedico" style="width:200px; border-radius:20px; background-color:#f8b500">
+                  <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
+                  </button>
+      
+      
+      <!-- Modal -->
+      <div class="modal fade" id="estudioMedico" tabindex="-1" role="dialog" aria-labelledby="estudioMedicoLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+      <div class="modal-content" style="padding:20px; border: 2px solid orange; border-radius:20px">
+        <div class="modal-header">
+          <h5 class="modal-title" id="estudioMedicoLabel">Centro de estudios médicos</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer" style=" display: flex;
+        align-items: center;
+        justify-content: center;margin-bottom:20px;">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal"  style="width:200px; border-radius:20px; background-color:#f8b500">Cerrar</button>
+        </div>
+      </div>
+      </div>
+      </div>
+      <!--Fin del Modal-->
+      </div>
+      </div>         
+      </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/turismo/turismo.JPG" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/turismo/1.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/turismo/2.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/turismo/3.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/turismo/4.JPG" alt="Second slide">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title" style="text-align:center">Argentina turismo
+                <pre>
+                </pre></h4>
+                
+              </div>
+              <div class="col-md-12" style=" display: flex;
+              align-items: center;
+              justify-content: center;margin-bottom:20px;">
+              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#turismo" style="width:200px; border-radius:20px; background-color:#f8b500">
+                <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
+                </button>
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="turismo" tabindex="-1" role="dialog" aria-labelledby="turismoLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content" style="padding:20px; border: 2px solid orange; border-radius:20px">
+      <div class="modal-header">
+        <h5 class="modal-title" id="turismoLabel">Argentina 360 turismo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer" style=" display: flex;
+      align-items: center;
+      justify-content: center;margin-bottom:20px;">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"  style="width:200px; border-radius:20px; background-color:#f8b500">Cerrar</button>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!--Fin del Modal-->
+    </div>
+    </div>         
+    </div> 
+    <div class="espacio"></div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100 img-fluid zoom" src="images/portfolio/deportesEx/0.JPG" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 img-fluid zoom" src="images/portfolio/deportesEx/1.JPG" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 img-fluid zoom" src="images/portfolio/deportesEx/2.JPG" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 img-fluid zoom" src="images/portfolio/deportesEx/3.JPG" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 img-fluid zoom" src="images/portfolio/deportesEx/4.JPG" alt="Second slide">
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title" style="text-align:center">Deportes extremos</h4>
+                  
+                </div>
+                <div class="col-md-12" style=" display: flex;
+                align-items: center;
+                justify-content: center;margin-bottom:20px;">
+                <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#extremo" style="width:200px; border-radius:20px; background-color:#f8b500">
+                  <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
+                  </button>
+      
+      
+      <!-- Modal -->
+      <div class="modal fade" id="extremo" tabindex="-1" role="dialog" aria-labelledby="extremoLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+      <div class="modal-content" style="padding:20px; border: 2px solid orange; border-radius:20px">
+        <div class="modal-header">
+          <h5 class="modal-title" id="extremoLabel">Deportes extremos</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer" style=" display: flex;
+        align-items: center;
+        justify-content: center;margin-bottom:20px;">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal"  style="width:200px; border-radius:20px; background-color:#f8b500">Cerrar</button>
+        </div>
+      </div>
+      </div>
+      </div>
+      <!--Fin del Modal-->
+      </div>
+      </div>         
+      </div>  
+
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/hitechStart/198805010_302053054915806_1865987989568494200_n.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/hitechStart/1.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/hitechStart/2.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/hitechStart/3.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/hitechStart/4.JPG" alt="First slide">
+                </div>
+              </div>
+            </div>   
+            <div class="card-body">
+              <h4 class="card-title" style="text-align:center">Difusión de las TICS</h4>
+                
+              </div>
+              <div class="col-md-12" style=" display: flex;
+              align-items: center;
+              justify-content: center;margin-bottom:20px;">
+              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#hitechStart" style="width:200px; border-radius:20px; background-color:#f8b500">
+                <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
+                </button>
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="hitechStart" tabindex="-1" role="dialog" aria-labelledby="hitechStartLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content" style="padding:20px; border: 2px solid orange; border-radius:20px">
+      <div class="modal-header">
+        <h5 class="modal-title" id="hitechStartLabel">Difusión de las TICS</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer" style=" display: flex;
+      align-items: center;
+      justify-content: center;margin-bottom:20px;">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"  style="width:200px; border-radius:20px; background-color:#f8b500">Cerrar</button>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!--Fin del Modal-->
+    </div>
+    </div>         
+    </div>   
+
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <img src="images/portfolio/images.png" class="img-fluid zoom" />
+          
+          <div class="card-body">
+            <h4 class="card-title" style="text-align:center">Selenium y Java</h4>
+              
+            </div>
+            <div class="col-md-12" style=" display: flex;
+            align-items: center;
+            justify-content: center;margin-bottom:20px;">
+            <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#seleium" style="width:200px; border-radius:20px; background-color:#f8b500">
+              <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
+              </button>
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="seleium" tabindex="-1" role="dialog" aria-labelledby="seleiumLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content" style="padding:20px; border: 2px solid orange; border-radius:20px">
+    <div class="modal-header">
+      <h5 class="modal-title" id="seleiumLabel">Selenium y java</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      ...
+    </div>
+    <div class="modal-footer" style=" display: flex;
+    align-items: center;
+    justify-content: center;margin-bottom:20px;">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal"  style="width:200px; border-radius:20px; background-color:#f8b500">Cerrar</button>
+    </div>
+  </div>
+  </div>
+  </div>
+  <!--Fin del Modal-->
+  </div>
+  </div>         
+  </div>   
+  <div class="espacio"></div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <img src="images/portfolio/Captura_W84HFcm.JPG" class="img-fluid zoom" />
+            <div class="card-body">
+              <h4 class="card-title" style="text-align:center">Monitor de signos vitales</h4>
+                
+              </div>
+              <div class="col-md-12" style=" display: flex;
+              align-items: center;
+              justify-content: center;margin-bottom:20px;">
+              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#movisign" style="width:200px; border-radius:20px; background-color:#f8b500">
+                <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
+                </button>
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="movisign" tabindex="-1" role="dialog" aria-labelledby="movisignLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content" style="padding:20px; border: 2px solid orange; border-radius:20px">
+      <div class="modal-header">
+        <h5 class="modal-title" id="movisignLabel">Monitor de signos vitales</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer" style=" display: flex;
+      align-items: center;
+      justify-content: center;margin-bottom:20px;">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"  style="width:200px; border-radius:20px; background-color:#f8b500">Cerrar</button>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!--Fin del Modal-->
+    </div>
+    </div>         
+    </div>   
+
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <img src="images/portfolio/vmware.png" class="img-fluid zoom" />
+            <div class="card-body">
+              <h4 class="card-title" style="text-align:center">Hipervisores</h4>
+                
+              </div>
+              <div class="col-md-12" style=" display: flex;
+              align-items: center;
+              justify-content: center;margin-bottom:20px;">
+              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#storage" style="width:200px; border-radius:20px; background-color:#f8b500">
+                <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
+                </button>
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="storage" tabindex="-1" role="dialog" aria-labelledby="storageLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content" style="padding:20px; border: 2px solid orange; border-radius:20px">
+      <div class="modal-header">
+        <h5 class="modal-title" id="storageLabel">Hipervisores y almacenamiento</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer" style=" display: flex;
+      align-items: center;
+      justify-content: center;margin-bottom:20px;">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"  style="width:200px; border-radius:20px; background-color:#f8b500">Cerrar</button>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!--Fin del Modal-->
+    </div>
+    </div>         
+    </div> 
+
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <img src="images/portfolio/tateti.JPG" class="img-fluid zoom" />
+            <div class="card-body">
+              <h4 class="card-title" style="text-align:center">Juego TATETI</h4>
+                
+              </div>
+              <div class="col-md-12" style=" display: flex;
+              align-items: center;
+              justify-content: center;margin-bottom:20px;">
+              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#tateti" style="width:200px; border-radius:20px; background-color:#f8b500">
+                <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
+                </button>
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="tateti" tabindex="-1" role="dialog" aria-labelledby="tatetiLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content" style="padding:20px; border: 2px solid orange; border-radius:20px">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tatetiLabel">Juego TATETI</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer" style=" display: flex;
+      align-items: center;
+      justify-content: center;margin-bottom:20px;">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"  style="width:200px; border-radius:20px; background-color:#f8b500">Cerrar</button>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!--Fin del Modal-->
+    </div>
+    </div>         
+    </div>  
+    <div class="espacio"></div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <img src="images/portfolio/frogger.JPG" class="img-fluid zoom" />
+            <div class="card-body">
+              <h4 class="card-title" style="text-align:center">Juego FROGGER</h4>
+                
+              </div>
+              <div class="col-md-12" style=" display: flex;
+              align-items: center;
+              justify-content: center;margin-bottom:20px;">
+              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#frogger" style="width:200px; border-radius:20px; background-color:#f8b500">
+                <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
+                </button>
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="frogger" tabindex="-1" role="dialog" aria-labelledby="froggerLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content" style="padding:20px; border: 2px solid orange; border-radius:20px">
+      <div class="modal-header">
+        <h5 class="modal-title" id="forggerLabel">Juego FROGGER</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer" style=" display: flex;
+      align-items: center;
+      justify-content: center;margin-bottom:20px;">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"  style="width:200px; border-radius:20px; background-color:#f8b500">Cerrar</button>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!--Fin del Modal-->
+    </div>
+    </div>         
+    </div>  
+
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/canitoteam/peluqueriaCanina.JPG" alt="First slide">
+                  
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/canitoteam/1.JPG" alt="Second slide">
+                  
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/canitoteam/3.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/canitoteam/4.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/canitoteam/2.JPG" alt="Second slide">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title" style="text-align:center">Estética canina</h4>
+                
+              </div>
+              <div class="col-md-12" style=" display: flex;
+              align-items: center;
+              justify-content: center;margin-bottom:20px;">
+              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#canito" style="width:200px; border-radius:20px; background-color:#f8b500">
+                <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
+                </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="canito" tabindex="-1" role="dialog" aria-labelledby="canitoLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content" style="padding:20px; border: 2px solid orange; border-radius:20px">
+      <div class="modal-header">
+        <h5 class="modal-title" id="canitoLabel">Estética canina</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer" style=" display: flex;
+      align-items: center;
+      justify-content: center;margin-bottom:20px;">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"  style="width:200px; border-radius:20px; background-color:#f8b500">Cerrar</button>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!--Fin del Modal-->
+    </div>
+    </div>         
+    </div>
+
+           <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/Testing/areacong.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/Testing/formsimp.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/Testing/Herramienta de calidad.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/Testing/Herramienta de testing.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/Testing/impper.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/Testing/scceves.jpg" alt="Second slide">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title" style="text-align:center">Herramienta de Testing</h4>
+                
+              </div>
+              <div class="col-md-12" style=" display: flex;
+              align-items: center;
+              justify-content: center;margin-bottom:20px;">
+              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#testing" style="width:200px; border-radius:20px; background-color:#f8b500">
+                <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
+                </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="testing" tabindex="-1" role="dialog" aria-labelledby="testingLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content" style="padding:20px; border: 2px solid orange; border-radius:20px">
+      <div class="modal-header">
+        <h5 class="modal-title" id="testingLabel">Herramienta de Testing</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer" style=" display: flex;
+      align-items: center;
+      justify-content: center;margin-bottom:20px;">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"  style="width:200px; border-radius:20px; background-color:#f8b500">Cerrar</button>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!--Fin del Modal-->
+    </div>
+    </div>         
+    </div>
+    <div class="espacio"></div>  
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/facturaciion/1.JPG" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/facturaciion/2.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/facturaciion/3.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-fluid zoom" src="images/portfolio/facturaciion/4.JPG" alt="Second slide">
+                </div>            
+              </div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title" style="text-align:center">Sistema de seguimiento para pacientes</h4>
+                
+              </div>
+              <div class="col-md-12" style=" display: flex;
+              align-items: center;
+              justify-content: center;margin-bottom:20px;">
+              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#seguimiento" style="width:200px; border-radius:20px; background-color:#f8b500">
+                <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
+                </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="seguimiento" tabindex="-1" role="dialog" aria-labelledby="seguimientoLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content" style="padding:20px; border: 2px solid orange; border-radius:20px">
+      <div class="modal-header">
+        <h5 class="modal-title" id="seguimientoLabel">Sistema de seguimiento para pacientes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer" style=" display: flex;
+      align-items: center;
+      justify-content: center;margin-bottom:20px;">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"  style="width:200px; border-radius:20px; background-color:#f8b500">Cerrar</button>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!--Fin del Modal-->
+    </div>
+    </div>         
+    </div>
+           
+          </div>
+      </div>
+    </div>
+
+    <!-- Posts section -->
+    <div class="blog" id="blog">
+      <div class="container">
+        <h1 class="text-center">Estudios</h1>
+        <div class="row">
+          <div class="col-md-4 col-lg-4 col-sm-12">
+            <div class="card">
+              <div class="card-img">
+                <img src="images/posts/unlam.jpg" class="img-fluid" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">
+                  Ingeniero en Informática con orientación en redes y sistemas
+                  distribuidos
+                </h4>
+                <p class="card-text">Universidad Nacional de la Matanza</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12">
+            <div class="card">
+              <div class="card-img">
+                <img src="images/posts/unlam.jpg" class="img-fluid" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">
+                  Analista programador
+                  <pre>
+                    
+                  </pre>
+                </h4>
+                <p class="card-text">Universidad Nacional de la matanza</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12">
+            <div class="card">
+              <div class="card-img">
+                <img src="images/posts/cfp.png" class="img-fluid" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Especialista en Desarrollo web</h4>
+                <pre></pre>
+                <p class="card-text">Centro de formación profesional n° 36</p>
+              </div>
+            </div>
+          </div>
+          <div class="espacio"></div>
+          <div class="col-md-4 col-lg-4 col-sm-12">
+            <div class="card">
+              <div class="card-img">
+                <img src="images/posts/polotic.png" class="img-fluid" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">
+                  Desarrollador web full stack con java con perfil Junior
+                </h4>
+                <p class="card-text">Polo tecnológico de misiones</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="images/posts/LinkedIn-Learning.png"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Desarrollador web full stack</h4>
+                <pre></pre>
+                <p class="card-text">Linkedin Learning</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12">
+            <div class="card">
+              <div class="card-img">
+                <img src="images/posts/codo a codo.jpg" class="img-fluid" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Desarrollador web</h4>
+                <pre></pre>
+                <p class="card-text">Codo a codo BA 11 mil programadores</p>
+              </div>
+            </div>
+          </div>
+          <div class="espacio"></div>
+          <div class="col-md-4 col-lg-4 col-sm-12">
+            <div class="card">
+              <div class="card-img">
+                <img src="images/posts/UVL.jpg" class="img-fluid" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Programador web</h4>
+                <pre></pre>
+                <p class="card-text">Centro universitario de vicente lópez</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team section -->
+    <div class="team" id="team">
+      <div class="container">
+        <h1 class="text-center">Interes</h1>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-12 item">
+            <img src="images/interes/gym.jpg" class="img-fluid" alt="team" />
+            <div class="des">Musculación</div>
+            <span class="text-muted">Salud</span>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 item">
+            <img
+              src="images/interes/ciclismo.jpg"
+              class="img-fluid"
+              alt="team"
+            />
+            <div class="des">Ciclismo</div>
+            <span class="text-muted">Salud </span>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 item">
+            <img
+              src="images/interes/nuttricion.JPG"
+              class="img-fluid"
+              alt="team"
+            />
+            <div class="des">Nutrición</div>
+            <span class="text-muted">Salud</span>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 item">
+            <img
+              src="images/interes/ovejero.jpg"
+              class="img-fluid"
+              alt="team"
+            />
+            <div class="des">Adiestramiento</div>
+            <span class="text-muted">Educación</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact form -->
+    <div class="contact-form" id="contact">
+      <div class="container">
+        <form>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <h1>Escríbeme</h1>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 right">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  placeholder="Ingresa tu nombre"
+                  name=""
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  placeholder="ingresa tu Email@email.com"
+                  name="email"
+                />
+              </div>
+              <div class="form-group">
+                <textarea class="form-control form-control-lg"> </textarea>
+              </div>
+              <input
+                type="submit"
+                class="btn btn-secondary btn-block"
+                value="ENVIAR"
+                name=""
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+     <!-- Pie de página -->
+     <footer>
+      <div class="copy">
+        <p>Todos los derechos reservados  &#169 Copyright Di Ludovico Maximiliano 2021</p>
+      </div>
+      <div class="footer-redes">
+        <a href="https://www.facebook.com/hitechstart" target="_blank">
+          <i class="fab fa-facebook  fa-3x" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/hitechStart?tab=repositories&q=&type=&language=&sort=name" target="_blank">
+          <i class="fab fa-github fa-3x" aria-hidden="true"></i>
+        </a>
+        <a href="https://ar.linkedin.com/in/maximiliano-di-ludovico" target="_blank">
+          <i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
+        </a>
+     
+        <img src="images/logo.JPG" class="img-fluid" alt="team"  style="width:3rem; border-radius:60%;
+        padding-bottom:1.3rem"/>
+      
+      </div>
+    </footer>
+
+    <!-- add Javasscript file from js file -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
