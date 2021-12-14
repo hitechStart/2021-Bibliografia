@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-ARG" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -136,11 +136,13 @@ conoce mas acerca de mi"
         <h1 class="text-center">Acerca de mi</h1>
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <img src="images/Carnet.jpg" class="img-fluid zoom" />
+            <img src="images/Carnet.jpg" class="img-fluid zoom" title="Maximiliano Di Ludovico"/>
             <span class="text-justify">Ingeniero en Informática</span>
           </div>
           <div class="col-lg-8 col-md-8 col-sm-12 desc">
-            <h3>Maximiliano Di Ludovico</h3>
+            <h3 id="efectoAmpliacion">
+             Maximiliano Di Ludovico
+            </h3>
             <p>
               Soy un Profesional que investiga, desarrolla, diseña y crea
               modelos fundados en sistemas informáticos en el área comercial,
@@ -160,41 +162,51 @@ conoce mas acerca de mi"
   </section>
 
     <!-- portfolio -->
+    <section>
     <div class="portfolio" id="portfolio">
       <h1 class="text-center">Portafolio</h1>
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-12">
 
-            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div class="card tarjetas" style="border: 1px solid #F97300; border-radius:20px">
 
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/bibliografia/1.JPG" alt="First slide">
-                  
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/bibliografia/2.JPG" alt="Second slide">
-                  
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/bibliografia/3.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/bibliografia/4.JPG" alt="Second slide">
+                  </figure>
                 </div>
               </div>
             </div>
 
-            <div class="card-body">
-              <h4 class="card-title" style="text-align:center">Bibliografía</h4>
+            <div class="card-body" style="height:8.9em;">
+              <hgroup>
+              <h4 class="card-title" style="text-align:center">Biografía</h4>
+              <h6>HTML CSS Javasscript bootstrap Jquery </h6>
+              </hgroup>
                 
               </div>
               <div class="col-md-12" style=" display: flex;
               align-items: center;
               justify-content: center;margin-bottom:20px;">
-              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#bibliografia" style="width:200px; border-radius:20px; background-color:#f8b500">
+              <button type="button" class="btn btn-labeled" id="reproducir" data-toggle="modal" data-target="#bibliografia" style="width:200px; border-radius:20px; background-color:#f8b500">
                 <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
                 </button>
 
@@ -210,7 +222,20 @@ conoce mas acerca de mi"
         </button>
       </div>
       <div class="modal-body">
-        ...
+         Proyecto que contiene un resumen de todos los trabajos realizados en diferentes entornos académicos e implementados con diferentes tecnologías.
+
+         <script type="application/javascript">
+      
+          var el = document.getElementById("reproducir");   
+            el.addEventListener("click", textoAVoz, false);
+
+            function textoAVoz() {   
+          var msg = new SpeechSynthesisUtterance();       
+          msg.text = "Proyecto que contiene un resumen de todos los trabajos realizados en diferentes entornos académicos e implementados con diferentes tecnologías";       
+         window.speechSynthesis.speak(msg);
+         
+            }
+        </script> 
       </div>
       <div class="modal-footer" style=" display: flex;
       align-items: center;
@@ -227,48 +252,69 @@ conoce mas acerca de mi"
           </div>
 
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div class="card tarjetas" style="border: 1px solid #F97300; border-radius:20px">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/ecommerce/10.png" alt="First slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/ecommerce/12.png" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/ecommerce/13.png" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/ecommerce/14.png" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/ecommerce/2.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/ecommerce/5.png" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/ecommerce/6.png" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/ecommerce/8.png" alt="Second slide">
+                  </figure>
                 </div>
                     <div class="carousel-item">
+                      <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/ecommerce/9.png" alt="Third slide">
+                      </figure>
                 </div>
               </div>
             </div>
 
 
-            <div class="card-body">
+            <div class="card-body" style="height:9em;">
+              <hgroup>
               <h4 class="card-title" style="text-align:center">Analizador de mercado</h4>
-                
+              <h6>HTML CSS Javascript jquery bootstrap .netCore Java Grails Apis SQL server analisis de datos big data</h6>
+
+              </hgroup>
               </div>
               <div class="col-md-12" style=" display: flex;
               align-items: center;
               justify-content: center;margin-bottom:20px;">
-              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#ecommerce" style="width:200px; border-radius:20px; background-color:#f8b500">
+              <button type="button" class="btn btn-labeled"  id="reproducir2" data-toggle="modal" data-target="#ecommerce" style="width:200px; border-radius:20px; background-color:#f8b500">
                 <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
                 </button>
 
@@ -284,7 +330,22 @@ conoce mas acerca de mi"
         </button>
       </div>
       <div class="modal-body">
-        ...
+        Sistema que permite analizar y gestionar datos. Quienes accedan a la plataforma podrán realizar consultas
+        sobre un producto del mercado así como solicitar un análisis de sus competidores 
+        recibiendo la información de forma interpretada luego de la recolección de datos de las
+        distintas bases de datos de los principales centros de e-commerce.
+        <script type="application/javascript">
+      
+          var el = document.getElementById("reproducir2");   
+            el.addEventListener("click", textoAVoz, false);
+
+            function textoAVoz() {   
+          var msg = new SpeechSynthesisUtterance();       
+          msg.text = "sistema que permite analizar y gestionar datos. Quienes accedan a la plataforma podrán realizar consultas sobre un producto del mercado así como solicitar un análisis de sus competidores recibiendo la información de forma interpretada luego de la recolección de datos de las distintas bases de datos de los principales centros de e-commerce";       
+         window.speechSynthesis.speak(msg);
+         
+            }
+        </script> 
       </div>
       <div class="modal-footer" style=" display: flex;
       align-items: center;
@@ -299,34 +360,46 @@ conoce mas acerca de mi"
 </div>         
 </div>
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div class="card tarjetas" style="border: 1px solid #F97300; border-radius:20px">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/pasteleria/Captura.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/pasteleria/3.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/pasteleria/4.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/pasteleria/5.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/pasteleria/2.JPG" alt="First slide">
+                  </figure>
                 </div>
               </div>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="height:9em;">
+              <hgroup>
               <h4 class="card-title" style="text-align:center">Pasteleria</h4>
-                
+              <h6> HTML CSS Javascript bootstrap jquery Python Django SQLite </h6>
+              </hgroup>              
               </div>
               <div class="col-md-12" style=" display: flex;
               align-items: center;
               justify-content: center;margin-bottom:20px;">
-              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#pasteleria" style="width:200px; border-radius:20px; background-color:#f8b500">
+              <button type="button" class="btn btn-labeled"  id="reproducir3" data-toggle="modal" data-target="#pasteleria" style="width:200px; border-radius:20px; background-color:#f8b500">
                 <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
                 </button>
 
@@ -342,7 +415,19 @@ conoce mas acerca de mi"
         </button>
       </div>
       <div class="modal-body">
-        ...
+        Proyecto ecommerce para desarrollar una tienda virtual basada en una comunidad de clientes y que la misma alcance a mas usuarios, agilice las ventas, reduzca gastos y aumente las ganancias.
+        <script type="application/javascript">
+      
+          var el = document.getElementById("reproducir3");   
+            el.addEventListener("click", textoAVoz, false);
+
+            function textoAVoz() {   
+          var msg = new SpeechSynthesisUtterance();       
+          msg.text = " Proyecto ecommerce para desarrollar una tienda virtual basada en una comunidad de clientes y que la misma alcance a mas usuarios, agilice las ventas, reduzca gastos y aumente las ganancias.";       
+         window.speechSynthesis.speak(msg);
+         
+            }
+        </script>
       </div>
       <div class="modal-footer" style=" display: flex;
       align-items: center;
@@ -360,49 +445,72 @@ conoce mas acerca de mi"
 <div class="espacio"></div>
 
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div class="card tarjetas" style="border: 1px solid #F97300; border-radius:20px">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/reserrvas/Captura.JPG" alt="First slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/reserrvas/10.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/reserrvas/11.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/reserrvas/2.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/reserrvas/3.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/reserrvas/4.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/reserrvas/5.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                </figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/reserrvas/6.JPG" alt="Second slide">
+              </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/reserrvas/7.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/reserrvas/9.JPG" alt="Second slide">
+                  </figure>
                 </div>
               </div>
             </div>
-               <div class="card-body">
+               <div class="card-body" style="height:9em;">
+                <hgroup>
           <h4 class="card-title" style="text-align:center">Sistema de reservas para hoteleria</h4>
+          <h6>HTML CSS Javascript Jquery Bootstrap Java Mysql JSP JPA JDBC Hibernate</h6>
+                </hgroup>
             
           </div>
           <div class="col-md-12" style=" display: flex;
           align-items: center;
           justify-content: center;margin-bottom:20px;">
-          <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#reserva" style="width:200px; border-radius:20px; background-color:#f8b500">
+          <button type="button" class="btn btn-labeled"  id="reproducir4" data-toggle="modal" data-target="#reserva" style="width:200px; border-radius:20px; background-color:#f8b500">
             <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
             </button>
 
@@ -418,7 +526,19 @@ conoce mas acerca de mi"
     </button>
   </div>
   <div class="modal-body">
-    ...
+    Modelo de negocio para la gestión de reservas (disponibilidad según la validación de las fechas), registros de usuarios, habitaciones, suscripciones y entretenimientos pensados para el huesped. Difusión en canales de venta. Publicidad de la marca.
+    <script type="application/javascript">
+      
+      var el = document.getElementById("reproducir4");   
+        el.addEventListener("click", textoAVoz, false);
+
+        function textoAVoz() {   
+      var msg = new SpeechSynthesisUtterance();       
+      msg.text = "  Modelo de negocio para la gestión de reservas (disponibilidad según la validación de las fechas), registros de usuarios, habitaciones, suscripciones y entretenimiento pensados para el huesped. Difusión en canales de venta. Publicidad de la marca..";       
+     window.speechSynthesis.speak(msg);
+     
+        }
+    </script>
   </div>
   <div class="modal-footer" style=" display: flex;
   align-items: center;
@@ -434,34 +554,47 @@ conoce mas acerca de mi"
 </div>
 
             <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+              <div class="card tarjetas" style="border: 1px solid #F97300; border-radius:20px">
               <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
+                    <figure>
                     <img class="d-block w-100 img-fluid zoom" src="images/portfolio/clinica/clinica.JPG" alt="First slide">
+                    </figure>
                   </div>
                   <div class="carousel-item">
+                    <figure>
                     <img class="d-block w-100 img-fluid zoom" src="images/portfolio/clinica/2.JPG" alt="Second slide">
+                    </figure>
                   </div>
                   <div class="carousel-item">
+                    <figure>
                     <img class="d-block w-100 img-fluid zoom" src="images/portfolio/clinica/3.JPG" alt="Second slide">
+                    </figure>
                   </div>
                   <div class="carousel-item">
+                    <figure>
                     <img class="d-block w-100 img-fluid zoom" src="images/portfolio/clinica/4.JPG" alt="Second slide">
+                    </figure>
                   </div>
                   <div class="carousel-item">
+                    <figure>
                     <img class="d-block w-100 img-fluid zoom" src="images/portfolio/clinica/1.JPG" alt="Second slide">
+                    </figure>
                   </div>
                 </div>
               </div>
-              <div class="card-body">
+              <div class="card-body" style="height:9em;">
+                <hgroup>
                 <h4 class="card-title" style="text-align:center">Centro de estudios médicos</h4>
+                <h6>THTML CSS Javascript Bootstrap Jquery</h6>
+                </hgroup>
                   
                 </div>
                 <div class="col-md-12" style=" display: flex;
                 align-items: center;
                 justify-content: center;margin-bottom:20px;">
-                <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#estudioMedico" style="width:200px; border-radius:20px; background-color:#f8b500">
+                <button type="button" class="btn btn-labeled"  id="reproducir5" data-toggle="modal" data-target="#estudioMedico" style="width:200px; border-radius:20px; background-color:#f8b500">
                   <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
                   </button>
       
@@ -477,7 +610,19 @@ conoce mas acerca de mi"
           </button>
         </div>
         <div class="modal-body">
-          ...
+          Centro de estudios médicos CEM, difusión de enfermedades, calendario de vacunación e información general para el usuario.
+          <script type="application/javascript">
+      
+            var el = document.getElementById("reproducir5");   
+              el.addEventListener("click", textoAVoz, false);
+      
+              function textoAVoz() {   
+            var msg = new SpeechSynthesisUtterance();       
+            msg.text = "  Centro de estudios médicos CEM, difusión de enfermedades, calendario de vacunación e información general para el usuario.";       
+           window.speechSynthesis.speak(msg);
+           
+              }
+          </script>
         </div>
         <div class="modal-footer" style=" display: flex;
         align-items: center;
@@ -493,36 +638,49 @@ conoce mas acerca de mi"
       </div>
 
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div class="card tarjetas" style="border: 1px solid #F97300; border-radius:20px">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/turismo/turismo.JPG" alt="First slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/turismo/1.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/turismo/2.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/turismo/3.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/turismo/4.JPG" alt="Second slide">
+                  </figure>
                 </div>
               </div>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="height:9em;">
+              <hgroup>
               <h4 class="card-title" style="text-align:center">Argentina turismo
                 <pre>
                 </pre></h4>
+                <h6>HTML CSS</h6>
+              </hgroup>
                 
               </div>
               <div class="col-md-12" style=" display: flex;
               align-items: center;
               justify-content: center;margin-bottom:20px;">
-              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#turismo" style="width:200px; border-radius:20px; background-color:#f8b500">
+              <button type="button" class="btn btn-labeled" id="reproducir6" data-toggle="modal" data-target="#turismo" style="width:200px; border-radius:20px; background-color:#f8b500">
                 <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
                 </button>
     
@@ -538,7 +696,19 @@ conoce mas acerca de mi"
         </button>
       </div>
       <div class="modal-body">
-        ...
+        Modelo de negocio para la difusión del turismo en argentina. Reservas, atención e información para el cliente. Información de productos y servicios turísticos.
+        <script type="application/javascript">
+      
+          var el = document.getElementById("reproducir6");   
+            el.addEventListener("click", textoAVoz, false);
+    
+            function textoAVoz() {   
+          var msg = new SpeechSynthesisUtterance();       
+          msg.text = "Modelo de negocio para la difusión del turismo en argentina. Reservas, atención e información para el cliente. Información de productos y servicios turístico";       
+         window.speechSynthesis.speak(msg);
+         
+            }
+        </script>
       </div>
       <div class="modal-footer" style=" display: flex;
       align-items: center;
@@ -554,34 +724,47 @@ conoce mas acerca de mi"
     </div> 
     <div class="espacio"></div>
             <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+              <div class="card tarjetas" style="border: 1px solid #F97300; border-radius:20px">
               <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
+                    <figure>
                     <img class="d-block w-100 img-fluid zoom" src="images/portfolio/deportesEx/0.JPG" alt="First slide">
+                    </figure>
                   </div>
                   <div class="carousel-item">
+                    <figure>
                     <img class="d-block w-100 img-fluid zoom" src="images/portfolio/deportesEx/1.JPG" alt="Second slide">
+                    </figure>
                   </div>
                   <div class="carousel-item">
+                    <figure>
                     <img class="d-block w-100 img-fluid zoom" src="images/portfolio/deportesEx/2.JPG" alt="Second slide">
+                    </figure>
                   </div>
                   <div class="carousel-item">
+                    <figure>
                     <img class="d-block w-100 img-fluid zoom" src="images/portfolio/deportesEx/3.JPG" alt="Second slide">
+                    </figure>
                   </div>
                   <div class="carousel-item">
+                    <figure>
                     <img class="d-block w-100 img-fluid zoom" src="images/portfolio/deportesEx/4.JPG" alt="Second slide">
+                    </figure>
                   </div>
                 </div>
               </div>
-              <div class="card-body">
+              <div class="card-body" style="height:9em;">
+                <hgroup>
                 <h4 class="card-title" style="text-align:center">Deportes extremos</h4>
+                <h6>HTML CSS</h6>
+                </hgroup>
                   
                 </div>
                 <div class="col-md-12" style=" display: flex;
                 align-items: center;
                 justify-content: center;margin-bottom:20px;">
-                <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#extremo" style="width:200px; border-radius:20px; background-color:#f8b500">
+                <button type="button" class="btn btn-labeled" id="reproducir7" data-toggle="modal" data-target="#extremo" style="width:200px; border-radius:20px; background-color:#f8b500">
                   <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
                   </button>
       
@@ -597,7 +780,19 @@ conoce mas acerca de mi"
           </button>
         </div>
         <div class="modal-body">
-          ...
+          Canal de comunicacion de servicios y productos para deportes de alto impacto. Difusión, cursos y eventos sobre deportes extremos en argentina. Organizaciones y clubes donde poder desarrollar las mismas.
+          <script type="application/javascript">
+      
+            var el = document.getElementById("reproducir7");   
+              el.addEventListener("click", textoAVoz, false);
+      
+              function textoAVoz() {   
+            var msg = new SpeechSynthesisUtterance();       
+            msg.text = " Canal de comunicacion de servicios y productos para deportes de alto impacto. Difusión, cursos y eventos sobre deportes extremos en argentina. Organizaciones y clubes donde poder desarrollar las mismas.";       
+           window.speechSynthesis.speak(msg);
+           
+              }
+          </script>
         </div>
         <div class="modal-footer" style=" display: flex;
         align-items: center;
@@ -613,34 +808,44 @@ conoce mas acerca de mi"
       </div>  
 
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div class="card tarjetas" style="border: 1px solid #F97300; border-radius:20px">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/hitechStart/198805010_302053054915806_1865987989568494200_n.jpg" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/hitechStart/1.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/hitechStart/2.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/hitechStart/3.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/hitechStart/4.JPG" alt="First slide">
+                  </figure>
                 </div>
               </div>
             </div>   
-            <div class="card-body">
+            <div class="card-body" style="height:9em;">
               <h4 class="card-title" style="text-align:center">Difusión de las TICS</h4>
                 
               </div>
               <div class="col-md-12" style=" display: flex;
               align-items: center;
               justify-content: center;margin-bottom:20px;">
-              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#hitechStart" style="width:200px; border-radius:20px; background-color:#f8b500">
+              <button type="button" class="btn btn-labeled" id="reproducir8" data-toggle="modal" data-target="#hitechStart" style="width:200px; border-radius:20px; background-color:#f8b500">
                 <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
                 </button>
     
@@ -656,7 +861,19 @@ conoce mas acerca de mi"
         </button>
       </div>
       <div class="modal-body">
-        ...
+        Medio digital para la formacion del profesional IT, difusion y apoyo a los participantes de la industria del software. Novedades sobre cursos, seminarios, charlas, eventos, exposiciones, congresos, bolsas de empleo y mucho mas!. Tambien podras conocer y ponerte en contacto con otras personas que construyen el futuro digital.
+        <script type="application/javascript">
+      
+          var el = document.getElementById("reproducir8");   
+            el.addEventListener("click", textoAVoz, false);
+    
+            function textoAVoz() {   
+          var msg = new SpeechSynthesisUtterance();       
+          msg.text = "  Medio digital para la formacion del profesional IT, difusion y apoyo a los participantes de la industria del software. Novedades sobre cursos, seminarios, charlas, eventos, exposiciones, congresos, bolsas de empleo y mucho mas!. Tambien podras conocer y ponerte en contacto con otras personas que construyen el futuro digital.";       
+         window.speechSynthesis.speak(msg);
+         
+            }
+        </script>
       </div>
       <div class="modal-footer" style=" display: flex;
       align-items: center;
@@ -672,17 +889,17 @@ conoce mas acerca de mi"
     </div>   
 
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div class="card tarjetas" style="border: 1px solid #F97300; border-radius:20px">
             <img src="images/portfolio/images.png" class="img-fluid zoom" />
           
-          <div class="card-body">
+          <div class="card-body" style="height:9em;">
             <h4 class="card-title" style="text-align:center">Selenium y Java</h4>
               
             </div>
             <div class="col-md-12" style=" display: flex;
             align-items: center;
             justify-content: center;margin-bottom:20px;">
-            <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#seleium" style="width:200px; border-radius:20px; background-color:#f8b500">
+            <button type="button" class="btn btn-labeled" id="reproducir9" data-toggle="modal" data-target="#seleium" style="width:200px; border-radius:20px; background-color:#f8b500">
               <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
               </button>
   
@@ -698,7 +915,19 @@ conoce mas acerca de mi"
       </button>
     </div>
     <div class="modal-body">
-      ...
+      Entorno de pruebas de software para aplicaciones basadas en la web y soportadas por lenguaje de programación Java. Provee una herramienta para crear pruebas sin usar un lenguaje de scripting.
+      <script type="application/javascript">
+      
+        var el = document.getElementById("reproducir9");   
+          el.addEventListener("click", textoAVoz, false);
+  
+          function textoAVoz() {   
+        var msg = new SpeechSynthesisUtterance();       
+        msg.text = "Entorno de pruebas de software para aplicaciones basadas en la web y soportadas por lenguaje de programación Java. Provee una herramienta para crear pruebas sin usar un lenguaje de scripting.";       
+       window.speechSynthesis.speak(msg);
+       
+          }
+      </script>
     </div>
     <div class="modal-footer" style=" display: flex;
     align-items: center;
@@ -714,16 +943,21 @@ conoce mas acerca de mi"
   </div>   
   <div class="espacio"></div>
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div class="card tarjetas" style="border: 1px solid #F97300; border-radius:20px">
+              <figure>
             <img src="images/portfolio/Captura_W84HFcm.JPG" class="img-fluid zoom" />
-            <div class="card-body">
+              </figure>
+            <div class="card-body" style="height:9em;">
+              <hgroup>
               <h4 class="card-title" style="text-align:center">Monitor de signos vitales</h4>
+              <h6>Arduino processing Android</h6>
+              </hgroup>
                 
               </div>
               <div class="col-md-12" style=" display: flex;
               align-items: center;
               justify-content: center;margin-bottom:20px;">
-              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#movisign" style="width:200px; border-radius:20px; background-color:#f8b500">
+              <button type="button" class="btn btn-labeled" id="reproducir10" data-toggle="modal" data-target="#movisign" style="width:200px; border-radius:20px; background-color:#f8b500">
                 <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
                 </button>
     
@@ -739,7 +973,20 @@ conoce mas acerca de mi"
         </button>
       </div>
       <div class="modal-body">
-        ...
+      Sistema embebido ni invasivo de medición, detección y diagnóstico de los principales signos vitales utilizando un sensor de pulso y de temperatura guiado por IOT
+      para su implementacion diaria. Notificacion de alertas.
+      <script type="application/javascript">
+      
+        var el = document.getElementById("reproducir10");   
+          el.addEventListener("click", textoAVoz, false);
+  
+          function textoAVoz() {   
+        var msg = new SpeechSynthesisUtterance();       
+        msg.text = "  Sistema embebido ni invasivo de medición, detección y diagnóstico de los principales signos vitales utilizando un sensor de pulso y de temperatura guiado por IOT para su implementacion diaria. Notificacion de alertas.";       
+       window.speechSynthesis.speak(msg);
+       
+          }
+      </script>
       </div>
       <div class="modal-footer" style=" display: flex;
       align-items: center;
@@ -755,16 +1002,21 @@ conoce mas acerca de mi"
     </div>   
 
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div class="card tarjetas" style="border: 1px solid #F97300; border-radius:20px">
+              <figure>
             <img src="images/portfolio/vmware.png" class="img-fluid zoom" />
-            <div class="card-body">
-              <h4 class="card-title" style="text-align:center">Hipervisores</h4>
+              </figure>
+            <div class="card-body" style="height:9em;">
+              <hgroup>
+              <h4 class="card-title" style="text-align:center">Hipervisores y Virtualización</h4>
+              <h6>OpenFiler Exsi Vsheper client shell scripting Bash Raid</h6>
+              </hgroup>
                 
               </div>
               <div class="col-md-12" style=" display: flex;
               align-items: center;
               justify-content: center;margin-bottom:20px;">
-              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#storage" style="width:200px; border-radius:20px; background-color:#f8b500">
+              <button type="button" class="btn btn-labeled" id="reproducir11" data-toggle="modal" data-target="#storage" style="width:200px; border-radius:20px; background-color:#f8b500">
                 <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
                 </button>
     
@@ -780,7 +1032,19 @@ conoce mas acerca de mi"
         </button>
       </div>
       <div class="modal-body">
-        ...
+       Arquitectura configurable elaborada con un hipervisor de almacenamiento SAN & NAS para ejecución de pruebas, aumento del rendimiento, seguridad y gestión de las operaciones del cliente en un entorno virtual controlado por un administrador de procesos.
+       <script type="application/javascript">
+      
+        var el = document.getElementById("reproducir11");   
+          el.addEventListener("click", textoAVoz, false);
+  
+          function textoAVoz() {   
+        var msg = new SpeechSynthesisUtterance();       
+        msg.text = " Arquitectura configurable elaborada con un hipervisor de almacenamiento SAN & NAS para ejecución de pruebas, aumento del rendimiento, seguridad y gestión de las operaciones del cliente en un entorno virtual controlado por un administrador de procesos.";       
+       window.speechSynthesis.speak(msg);
+       
+          }
+      </script>
       </div>
       <div class="modal-footer" style=" display: flex;
       align-items: center;
@@ -796,16 +1060,21 @@ conoce mas acerca de mi"
     </div> 
 
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div class="card tarjetas" style="border: 1px solid #F97300; border-radius:20px">
+              <figure>
             <img src="images/portfolio/tateti.JPG" class="img-fluid zoom" />
-            <div class="card-body">
+              </figure>
+            <div class="card-body" style="height:9em;">
+              <hgroup>
               <h4 class="card-title" style="text-align:center">Juego TATETI</h4>
+              <h6>Linux Bash Shell scripting C C++ makefile threads socket</h6>
+              </hgroup>
                 
               </div>
               <div class="col-md-12" style=" display: flex;
               align-items: center;
               justify-content: center;margin-bottom:20px;">
-              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#tateti" style="width:200px; border-radius:20px; background-color:#f8b500">
+              <button type="button" class="btn btn-labeled" id="reproducir12" data-toggle="modal" data-target="#tateti" style="width:200px; border-radius:20px; background-color:#f8b500">
                 <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
                 </button>
     
@@ -821,7 +1090,19 @@ conoce mas acerca de mi"
         </button>
       </div>
       <div class="modal-body">
-        ...
+        Juego desarrollado en linux diseñado como cliente servidor. Desarrollo de estrategias pensados para resolver problemas matemáticos y alcanzarlos con un plan de acción.
+        <script type="application/javascript">
+          
+          var el = document.getElementById("reproducir12");   
+            el.addEventListener("click", textoAVoz, false);
+    
+            function textoAVoz() {   
+          var msg = new SpeechSynthesisUtterance();       
+          msg.text = "Juego desarrollado en linux diseñado como cliente servidor. Desarrollo de estrategias pensados para resolver problemas matemáticos y alcanzarlos con un plan de acción.";       
+         window.speechSynthesis.speak(msg);
+         
+            }
+        </script>
       </div>
       <div class="modal-footer" style=" display: flex;
       align-items: center;
@@ -837,16 +1118,21 @@ conoce mas acerca de mi"
     </div>  
     <div class="espacio"></div>
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div class="card tarjetas" style="border: 1px solid #F97300; border-radius:20px">
+              <figure>
             <img src="images/portfolio/frogger.JPG" class="img-fluid zoom" />
-            <div class="card-body">
+              </figure>
+            <div class="card-body" style="height:9em;">
+              <hgroup>
               <h4 class="card-title" style="text-align:center">Juego FROGGER</h4>
+              <h6>Linux Bash Shell scripting C C++ makefile threads socket</h6>
+            </hgroup>
                 
               </div>
               <div class="col-md-12" style=" display: flex;
               align-items: center;
               justify-content: center;margin-bottom:20px;">
-              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#frogger" style="width:200px; border-radius:20px; background-color:#f8b500">
+              <button type="button" class="btn btn-labeled" id="reproducir13" data-toggle="modal" data-target="#frogger" style="width:200px; border-radius:20px; background-color:#f8b500">
                 <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
                 </button>
     
@@ -862,7 +1148,19 @@ conoce mas acerca de mi"
         </button>
       </div>
       <div class="modal-body">
-        ...
+        Juego desarrollado en linux diseñado como cliente servidor pensado para resolver un problema y elaborar una solución cognitiva, estudiando el rendimiento desde la neurología.
+        <script type="application/javascript">
+          
+          var el = document.getElementById("reproducir13");   
+            el.addEventListener("click", textoAVoz, false);
+    
+            function textoAVoz() {   
+          var msg = new SpeechSynthesisUtterance();       
+          msg.text = "Juego desarrollado en linux diseñado como cliente servidor pensado para resolver un problema y elaborar una solución cognitiva, estudiando el rendimiento desde la neurología.";       
+         window.speechSynthesis.speak(msg);
+         
+            }
+        </script>
       </div>
       <div class="modal-footer" style=" display: flex;
       align-items: center;
@@ -878,36 +1176,46 @@ conoce mas acerca de mi"
     </div>  
 
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div class="card tarjetas" style="border: 1px solid #F97300; border-radius:20px">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/canitoteam/peluqueriaCanina.JPG" alt="First slide">
+                  </figure>
                   
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/canitoteam/1.JPG" alt="Second slide">
+                  </figure>
                   
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/canitoteam/3.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/canitoteam/4.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/canitoteam/2.JPG" alt="Second slide">
+                  </figure>
                 </div>
               </div>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="height:9em;">
               <h4 class="card-title" style="text-align:center">Estética canina</h4>
                 
               </div>
               <div class="col-md-12" style=" display: flex;
               align-items: center;
               justify-content: center;margin-bottom:20px;">
-              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#canito" style="width:200px; border-radius:20px; background-color:#f8b500">
+              <button type="button" class="btn btn-labeled" id="reproducir14" data-toggle="modal" data-target="#canito" style="width:200px; border-radius:20px; background-color:#f8b500">
                 <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
                 </button>
 
@@ -922,7 +1230,19 @@ conoce mas acerca de mi"
         </button>
       </div>
       <div class="modal-body">
-        ...
+        Asesoria y gestion de una tienda ecommerce en la red social Facebook. promoción dela marca, atención al cliente, administración y elaboración de contenidos, aumento de las ganancias y reducción de costos.
+        <script type="application/javascript">
+          
+          var el = document.getElementById("reproducir14");   
+            el.addEventListener("click", textoAVoz, false);
+    
+            function textoAVoz() {   
+          var msg = new SpeechSynthesisUtterance();       
+          msg.text = " Asesoria y gestion de una tienda ecommerce en la red social Facebook. promoción dela marca, atención al cliente, administración y elaboración de contenidos, aumento de las ganancias y reducción de costos.";       
+         window.speechSynthesis.speak(msg);
+         
+            }
+        </script>
       </div>
       <div class="modal-footer" style=" display: flex;
       align-items: center;
@@ -938,37 +1258,52 @@ conoce mas acerca de mi"
     </div>
 
            <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div class="card tarjetas" style="border: 1px solid #F97300; border-radius:20px">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
+                   <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/Testing/areacong.jpg" alt="First slide">
+                   </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/Testing/formsimp.jpg" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/Testing/Herramienta de calidad.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/Testing/Herramienta de testing.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/Testing/impper.jpg" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/Testing/scceves.jpg" alt="Second slide">
+                  </figure>
                 </div>
               </div>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="height:9em;">
+              <hgroup>
               <h4 class="card-title" style="text-align:center">Herramienta de Testing</h4>
+              <h6>C++ QA Testing</h6>
+              </hgroup>
                 
               </div>
               <div class="col-md-12" style=" display: flex;
               align-items: center;
               justify-content: center;margin-bottom:20px;">
-              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#testing" style="width:200px; border-radius:20px; background-color:#f8b500">
+              <button type="button" class="btn btn-labeled" id="reproducir15" data-toggle="modal" data-target="#testing" style="width:200px; border-radius:20px; background-color:#f8b500">
                 <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
                 </button>
 
@@ -983,7 +1318,19 @@ conoce mas acerca de mi"
         </button>
       </div>
       <div class="modal-body">
-        ...
+        Proporciona información objetiva e independiente sobre la calidad del producto, realiza una revisión y retroalimentación de las funcionalidades donde se va probando inicialmente lo de más bajo nivel y se van integrando y probando paulatinamente componentes hasta lograr un sistema completo totalmente probado.
+        <script type="application/javascript">
+          
+          var el = document.getElementById("reproducir15");   
+            el.addEventListener("click", textoAVoz, false);
+    
+            function textoAVoz() {   
+          var msg = new SpeechSynthesisUtterance();       
+          msg.text = "Proporciona información objetiva e independiente sobre la calidad del producto, realiza una revisión y retroalimentación de las funcionalidades donde se va probando inicialmente lo de más bajo nivel y se van integrando y probando paulatinamente componentes hasta lograr un sistema completo totalmente probado";       
+         window.speechSynthesis.speak(msg);
+         
+            }
+        </script>
       </div>
       <div class="modal-footer" style=" display: flex;
       align-items: center;
@@ -999,31 +1346,42 @@ conoce mas acerca de mi"
     </div>
     <div class="espacio"></div>  
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" style="border: 1px solid #F97300; border-radius:20px">
+            <div class="card tarjetas" style="border: 1px solid #F97300; border-radius:20px">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/facturaciion/1.JPG" alt="First slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/facturaciion/2.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/facturaciion/3.JPG" alt="Second slide">
+                  </figure>
                 </div>
                 <div class="carousel-item">
+                  <figure>
                   <img class="d-block w-100 img-fluid zoom" src="images/portfolio/facturaciion/4.JPG" alt="Second slide">
+                  </figure>
                 </div>            
               </div>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="height:9em;">
+              <hgroup>
               <h4 class="card-title" style="text-align:center">Sistema de seguimiento para pacientes</h4>
+              <h6> Construcción de Sistemas Documentacion </h6>
+              </hgroup>
                 
               </div>
               <div class="col-md-12" style=" display: flex;
               align-items: center;
               justify-content: center;margin-bottom:20px;">
-              <button type="button" class="btn btn-labeled"  data-toggle="modal" data-target="#seguimiento" style="width:200px; border-radius:20px; background-color:#f8b500">
+              <button type="button" class="btn btn-labeled" id="reproducir16" data-toggle="modal" data-target="#seguimiento" style="width:200px; border-radius:20px; background-color:#f8b500">
                 <span class="btn-label"><i class="fa fa-bookmark"></i></span style="align-text:center">  Rese&#241a
                 </button>
 
@@ -1038,7 +1396,19 @@ conoce mas acerca de mi"
         </button>
       </div>
       <div class="modal-body">
-        ...
+        Sistema de control de facturación, seguimiento y gestión de las operaciones que debe llevar el cliente para su atención, historia clínica, diagnósticos y prácticas médicas, pago de bonos y autorizaciones. 
+        <script type="application/javascript">
+          
+          var el = document.getElementById("reproducir16");   
+            el.addEventListener("click", textoAVoz, false);
+    
+            function textoAVoz() {   
+          var msg = new SpeechSynthesisUtterance();       
+          msg.text = "Sistema de control de facturación, seguimiento y gestión de las operaciones que debe llevar el cliente para su atención, historia clínica, diagnósticos y prácticas médicas, pago de bonos y autorizaciones.";       
+         window.speechSynthesis.speak(msg);
+         
+            }
+        </script>
       </div>
       <div class="modal-footer" style=" display: flex;
       align-items: center;
@@ -1056,8 +1426,9 @@ conoce mas acerca de mi"
           </div>
       </div>
     </div>
-
+  </section>
     <!-- Posts section -->
+    <section>
     <div class="blog" id="blog">
       <div class="container">
         <h1 class="text-center">Estudios</h1>
@@ -1067,12 +1438,12 @@ conoce mas acerca de mi"
               <div class="card-img">
                 <img src="images/posts/unlam.jpg" class="img-fluid" />
               </div>
-              <div class="card-body">
+              <div class="card-body" >
                 <h4 class="card-title">
                   Ingeniero en Informática con orientación en redes y sistemas
                   distribuidos
                 </h4>
-                <p class="card-text">Universidad Nacional de la Matanza</p>
+                <p class="card-text"><cite>Universidad Nacional de la Matanza</cite></p>
               </div>
             </div>
           </div>
@@ -1088,7 +1459,7 @@ conoce mas acerca de mi"
                     
                   </pre>
                 </h4>
-                <p class="card-text">Universidad Nacional de la matanza</p>
+                <p class="card-text"><cite>Universidad Nacional de la matanza</cite></p>
               </div>
             </div>
           </div>
@@ -1100,7 +1471,7 @@ conoce mas acerca de mi"
               <div class="card-body">
                 <h4 class="card-title">Especialista en Desarrollo web</h4>
                 <pre></pre>
-                <p class="card-text">Centro de formación profesional n° 36</p>
+                <p class="card-text"><cite>Centro de formación profesional n° 36</cite></p>
               </div>
             </div>
           </div>
@@ -1114,7 +1485,7 @@ conoce mas acerca de mi"
                 <h4 class="card-title">
                   Desarrollador web full stack con java con perfil Junior
                 </h4>
-                <p class="card-text">Polo tecnológico de misiones</p>
+                <p class="card-text"><cite>Polo tecnológico de misiones</cite></p>
               </div>
             </div>
           </div>
@@ -1129,7 +1500,7 @@ conoce mas acerca de mi"
               <div class="card-body">
                 <h4 class="card-title">Desarrollador web full stack</h4>
                 <pre></pre>
-                <p class="card-text">Linkedin Learning</p>
+                <p class="card-text"><cite>Linkedin Learning</cite></p>
               </div>
             </div>
           </div>
@@ -1141,7 +1512,7 @@ conoce mas acerca de mi"
               <div class="card-body">
                 <h4 class="card-title">Desarrollador web</h4>
                 <pre></pre>
-                <p class="card-text">Codo a codo BA 11 mil programadores</p>
+                <p class="card-text"><cite>Codo a codo BA 11 mil programadores</cite></p>
               </div>
             </div>
           </div>
@@ -1154,15 +1525,16 @@ conoce mas acerca de mi"
               <div class="card-body">
                 <h4 class="card-title">Programador web</h4>
                 <pre></pre>
-                <p class="card-text">Centro universitario de vicente lópez</p>
+                <p class="card-text"><cite>Centro universitario de vicente lópez</cite></p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
+  </section>
     <!-- Team section -->
+    <section>
     <div class="team" id="team">
       <div class="container">
         <h1 class="text-center">Interes</h1>
@@ -1202,8 +1574,9 @@ conoce mas acerca de mi"
         </div>
       </div>
     </div>
-
+  </section>
     <!-- Contact form -->
+    <section>
     <div class="contact-form" id="contact">
       <div class="container">
         <form>
@@ -1242,11 +1615,11 @@ conoce mas acerca de mi"
         </form>
       </div>
     </div>
-
+  </section>
      <!-- Pie de página -->
      <footer>
       <div class="copy">
-        <p>Todos los derechos reservados  &#169 Copyright Di Ludovico Maximiliano 2021</p>
+        <p>Todos los derechos reservados Copyright &#169  Di Ludovico Maximiliano <time datetime>2021</time datetime></p>
       </div>
       <div class="footer-redes">
         <a href="https://www.facebook.com/hitechstart" target="_blank">
