@@ -1757,7 +1757,7 @@ justify-content: center;margin-bottom:20px;">
     <section>
     <div class="contact-form" id="contact">
       <div class="container">
-        <form action="enviar.php" method="POST">
+        <form id="myform" action="https://formsubmit.co/mdlprofesional@gmail.com" method="post">
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12">
               <h1>Escríbeme</h1>
@@ -1783,9 +1783,10 @@ justify-content: center;margin-bottom:20px;">
                 <textarea class="form-control form-control-lg"  name="mensaje"> </textarea>
               </div>
               <button  type="submit"
-              class="btn btn-secondary btn-block"
-            
-              >ENVIAR</button>
+              class="btn btn-secondary btn-block">ENVIAR</button>
+              <script>
+                document.getElementById('myform').reset();
+              </script>
             </div>
           </div>
         </form>
