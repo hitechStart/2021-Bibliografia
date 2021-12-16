@@ -372,6 +372,11 @@ conoce mas acerca de mi"
       </div>
       <div class="carousel-item">
         <figure>
+        <img class="d-block w-100 img-fluid zoom" src="images/portfolio/covid/10.png" alt="Second slide">
+        </figure>
+      </div>
+      <div class="carousel-item">
+        <figure>
         <img class="d-block w-100 img-fluid zoom" src="images/portfolio/covid/11.JPG" alt="Second slide">
         </figure>
       </div>
@@ -755,12 +760,7 @@ justify-content: center;margin-bottom:20px;">
               <figure>
               <img class="d-block w-100 img-fluid zoom" src="images/portfolio/viajesYTurismo/8.JPG" alt="Second slide">
               </figure>
-            </div>
-            <div class="carousel-item">
-              <figure>
-              <img class="d-block w-100 img-fluid zoom" src="images/portfolio/viajesYTurismo/10.png" alt="Second slide">
-              </figure>
-            </div>
+            </div>     
           </div>
         </div>
       
@@ -1757,7 +1757,7 @@ justify-content: center;margin-bottom:20px;">
     <section>
     <div class="contact-form" id="contact">
       <div class="container">
-        <form>
+        <form action="enviar.php" method="POST">
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12">
               <h1>Escríbeme</h1>
@@ -1768,7 +1768,7 @@ justify-content: center;margin-bottom:20px;">
                   type="text"
                   class="form-control form-control-lg"
                   placeholder="Ingresa tu nombre"
-                  name=""
+                  name="nombre"
                 />
               </div>
               <div class="form-group">
@@ -1780,14 +1780,12 @@ justify-content: center;margin-bottom:20px;">
                 />
               </div>
               <div class="form-group">
-                <textarea class="form-control form-control-lg"> </textarea>
+                <textarea class="form-control form-control-lg"  name="mensaje"> </textarea>
               </div>
-              <input
-                type="submit"
-                class="btn btn-secondary btn-block"
-                value="ENVIAR"
-                name=""
-              />
+              <button  type="submit"
+              class="btn btn-secondary btn-block"
+            
+              >ENVIAR</button>
             </div>
           </div>
         </form>
