@@ -42,10 +42,12 @@ conoce mas acerca de mi"
     <title>Di Ludovico Maximiliano</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <script>
+    <script type="text/javascript">
       $(document).ready(function(){
           $('.zoom').hover(function() {
               $(this).addClass('transition');
@@ -54,6 +56,7 @@ conoce mas acerca de mi"
           });
       });
       </script>
+    
     <style>
       #sticky {
         padding: 20px;
@@ -169,9 +172,8 @@ conoce mas acerca de mi"
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-12">
 
-            <div class="card tarjetas" style="border: 1px solid #F97300; border-radius:20px">
-
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="card tarjetas" style="border: 1px solid #F97300; border-radius:20px"> 
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-wrap="false">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <figure>
@@ -200,6 +202,15 @@ conoce mas acerca de mi"
                   tabIndex="0" alt="Second slide">
                   </figure>
                 </div>
+                <!--Video carrousel-->
+                  <div class="carousel-item embed-responsive-item" data-bs-touch="false" data-bs-interval="false" > 
+                  <iframe width="100%" height="258rem"
+                 style="
+                  display: block;
+                  margin: auto;
+                  padding: 1rem;" src="https://www.youtube.com/embed/G7qDuD109G8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>          
+              <!--Fin de video carrousel-->
               </div>
             </div>
 
@@ -1135,12 +1146,22 @@ justify-content: center;margin-bottom:20px;">
             </div>   
             <div class="card-body" style="height:9em;">
               <h4 class="card-title" style="text-align:center">Difusión de las TICS</h4>
-              <a href="https://www.facebook.com/hitechstart" target="_blank">
-                <div class="text-center" style="color:#F87300;border-radius:20px">
-                <i class="fab fa-facebook  fa-3x tarjetas" aria-hidden="true"></i>
-                </div>
-              </a>    
-              </div>
+              <a href="https://www.facebook.com/" target="_blank">
+
+                <!--Insertar el boton Me gusta y Compartir de Faceboock-->
+  
+              <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v8.0" nonce="rZ1gWl20">
+              </script>
+              <div class="container">
+                <div class="d-flex justify-content-center" style="padding-top:1rem">
+              <div id="fb-root">
+              <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v8.0" nonce="7VDbAS87"></script>
+              <div class="fb-like" data-href="https://facebook.com/hitechstart/" data-width="" data-layout="button" data-action="like" data-size="large" data-share="true"></div>
+                            </a>    
+              </div></div>
+            </div>
+          </div>    
+             <!--Fin del codigo para facebook-->
               <div class="col-md-12" style=" display: flex;
               align-items: center;
               justify-content: center;margin-bottom:20px;">
@@ -1598,12 +1619,21 @@ justify-content: center;margin-bottom:20px;">
             </div>
             <div class="card-body" style="height:9em;">
               <h4 class="card-title" style="text-align:center">Estética canina</h4>
-              <a href="https://es-la.facebook.com/canitoteam.esteticacaninayfelina" target="_blank">
-                <div class="text-center" style="color:#F87300;border-radius:20px">
-                <i class="fab fa-facebook  fa-3x tarjetas" aria-hidden="true"></i>
-                </div>
-              </a>
-              </div>
+              
+  <!--Insertar el boton Me gusta y Compartir de Faceboock-->
+  
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v8.0" nonce="rZ1gWl20">
+  </script>
+  <div class="container">
+    <div class="d-flex justify-content-center" style="padding-top:1rem">
+  <div id="fb-root">
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v8.0" nonce="7VDbAS87"></script>
+  <div class="fb-like" data-href="https://facebook.com/" data-width="" data-layout="button" data-action="like" data-size="large" data-share="true"></div>
+                </a>    
+  </div></div>
+</div>
+</div>    
+ <!--Fin del codigo para facebook-->
               <div class="col-md-12" style=" display: flex;
               align-items: center;
               justify-content: center;margin-bottom:20px;">
